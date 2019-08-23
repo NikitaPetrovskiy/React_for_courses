@@ -7,7 +7,9 @@ export const KINDS = Object.freeze({
 });
 
 export const Button = (props) => {
-    return (<button className={`btn ${props.kind}` || `btn default`} style={{borderRadius: props.radius}}>
-        {props.children}
-    </button>)
+    return (
+        <button className={`btn ${props.kind}` || `btn default`} style={{borderRadius: props.radius}}>
+            {props.children}
+        </button>
+    )
 };
